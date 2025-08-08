@@ -1,0 +1,168 @@
+/* Estilos específicos para ObjetosList */
+
+/* Contenedor principal que ocupa toda la pantalla */
+.objetos-list-container {
+  @apply relative h-full w-full flex items-center justify-center;
+  /* Espacio mínimo con el header para ocupar máximo espacio */
+  padding-top: 150px; /* Mínimo espacio para el header fijo */
+  padding-bottom: 90px; /* Espacio para el footer */
+}
+
+/* Fondo con gradiente */
+.objetos-list-background {
+  @apply absolute inset-0;
+  background: linear-gradient(135deg, rgba(19, 30, 32, 0.5) 0%, rgba(95, 121, 117, 0.5) 50%, rgba(85, 187, 247, 0.5) 100%);
+}
+
+/* Contenido principal centrado y moderado */
+.objetos-list-content {
+  @apply relative z-10 flex items-center justify-center;
+  /* Contenedor moderado */
+  width: 95%;
+  max-width: 1200px;
+  height: 100%;
+  padding: 2rem;
+}
+
+/* Contenedor del DynamicCardList */
+.objetos-list-dynamic-container {
+  @apply w-full h-full max-w-none text-white;
+  /* Centrado perfecto en el espacio disponible */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* Contenedor moderado */
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  min-width: auto;
+  min-height: auto;
+}
+
+/* Estilos para todos los elementos dentro del DynamicCardList */
+.objetos-list-dynamic-container * {
+  @apply text-white;
+}
+
+/* Títulos */
+.objetos-list-dynamic-container h1,
+.objetos-list-dynamic-container h2,
+.objetos-list-dynamic-container h3 {
+  @apply text-white;
+}
+
+/* Párrafos y spans */
+.objetos-list-dynamic-container p,
+.objetos-list-dynamic-container span {
+  @apply text-white;
+}
+
+/* Inputs */
+.objetos-list-dynamic-container input {
+  @apply text-white placeholder-white/60 border-white/30 bg-white/10;
+}
+
+/* Selects */
+.objetos-list-dynamic-container select {
+  @apply text-white border-white/30 bg-white/10;
+}
+
+/* Botones */
+.objetos-list-dynamic-container button {
+  @apply text-white;
+}
+
+/* Estados de hover para inputs */
+.objetos-list-dynamic-container input:hover {
+  @apply border-white/50 bg-white/20;
+}
+
+/* Estados de hover para selects */
+.objetos-list-dynamic-container select:hover {
+  @apply border-white/50 bg-white/20;
+}
+
+/* Estados de focus para inputs */
+.objetos-list-dynamic-container input:focus {
+  @apply border-white/70 bg-white/20 outline-none ring-2 ring-white/30;
+}
+
+/* Estados de focus para selects */
+.objetos-list-dynamic-container select:focus {
+  @apply border-white/70 bg-white/20 outline-none ring-2 ring-white/30;
+}
+
+/* Botón principal (Nuevo Objeto) */
+.objetos-list-dynamic-container .new-button {
+  @apply bg-orange-500 hover:bg-orange-600 text-white;
+}
+
+/* Paginación */
+.objetos-list-dynamic-container .pagination {
+  @apply text-white;
+}
+
+.objetos-list-dynamic-container .pagination button {
+  @apply text-white border-white/30 bg-white/10 hover:bg-white/20;
+}
+
+/* Estado vacío */
+.objetos-list-dynamic-container .empty-state {
+  @apply text-white;
+}
+
+/* Cards de elementos */
+.objetos-list-card {
+  @apply bg-white/10 backdrop-blur-lg border-white/20 text-white;
+}
+
+.objetos-list-card:hover {
+  @apply border-white/40 bg-white/20;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .objetos-list-container {
+    height: calc(100vh - 100px);
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  
+  .objetos-list-content {
+    width: 95%;
+    max-width: none;
+    padding: 1rem;
+  }
+  
+  .objetos-list-dynamic-container {
+    @apply text-sm;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+/* Animaciones */
+.objetos-list-dynamic-container * {
+  @apply transition-all duration-200;
+}
+
+/* Scroll personalizado */
+.objetos-list-dynamic-container ::-webkit-scrollbar {
+  @apply w-2;
+}
+
+.objetos-list-dynamic-container ::-webkit-scrollbar-track {
+  @apply bg-white/10 rounded-full;
+}
+
+.objetos-list-dynamic-container ::-webkit-scrollbar-thumb {
+  @apply bg-white/30 rounded-full;
+}
+
+.objetos-list-dynamic-container ::-webkit-scrollbar-thumb:hover {
+  @apply bg-white/50;
+}

@@ -1,0 +1,36 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {
+      colors: {
+        background: 'hsl(var(--color-background))',
+        'card-background': 'hsl(var(--color-card-background))',
+        'text-primary': 'hsl(var(--color-text-primary))',
+        'text-secondary': 'hsl(var(--color-text-secondary))',
+        border: 'hsl(var(--color-border))',
+        'accent-light': 'hsl(var(--color-accent-light))',
+        'orange-primary': 'hsl(var(--color-orange-primary))',
+        'red-primary': 'hsl(var(--color-red-primary))',
+        'status-green': 'hsl(var(--color-status-green))',
+        'status-blue': 'hsl(var(--color-status-blue))',
+        'status-orange': 'hsl(var(--color-status-orange))',
+        'status-yellow': 'hsl(var(--color-status-yellow))',
+        'status-red': 'hsl(var(--color-status-red))',
+        'status-gray': 'hsl(var(--color-status-gray))',
+        'status-green-light': 'hsl(var(--color-status-green-light))',
+        'status-blue-light': 'hsl(var(--color-status-blue-light))',
+        'status-orange-light': 'hsl(var(--color-status-orange-light))',
+        'status-yellow-light': 'hsl(var(--color-status-yellow-light))',
+        'status-red-light': 'hsl(var(--color-status-red-light))',
+        'status-gray-light': 'hsl(var(--color-status-gray-light))',
+        'chart-orange': 'hsl(var(--color-chart-orange))',
+        'chart-orange-alt': 'hsl(var(--color-chart-orange-alt))',
+        'chart-yellow': 'hsl(var(--color-chart-yellow))',
+        'chart-teal': 'hsl(var(--color-chart-teal))',
+      },
+    },
+  },
+  plugins: [],
+};

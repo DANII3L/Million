@@ -1,0 +1,111 @@
+/* Estilos personalizados para DynamicForm en modales */
+.modal-dynamic-form {
+  /* Sobrescribir estilos del DynamicForm para modales */
+}
+
+.max-w-md {
+  max-width: 38rem; 
+}
+
+.modal-dynamic-form .space-y-6 {
+  /* Ajustar espaciado */
+  gap: 1.5rem;
+}
+
+.modal-dynamic-form label {
+  /* Estilos para labels en modales */
+  color: rgba(131, 69, 69, 0.8) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  margin-bottom: 0.5rem !important;
+}
+
+.modal-dynamic-form input,
+.modal-dynamic-form select,
+.modal-dynamic-form textarea {
+  /* Estilos para inputs en modales */
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  color: white !important;
+  border-radius: 0.75rem !important;
+  padding: 0.75rem 1rem !important;
+  transition: all 0.2s !important;
+}
+
+.modal-dynamic-form input::placeholder,
+.modal-dynamic-form textarea::placeholder {
+  /* Estilos para placeholders */
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.modal-dynamic-form input:focus,
+.modal-dynamic-form select:focus,
+.modal-dynamic-form textarea:focus {
+  /* Estilos para focus en modales */
+  outline: none !important;
+  border-color: transparent !important;
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.5) !important;
+}
+
+.modal-dynamic-form input:focus,
+.modal-dynamic-form select:focus,
+.modal-dynamic-form textarea:focus {
+  /* Color de focus específico para modales */
+  box-shadow: 0 0 0 2px rgba(147, 51, 234, 0.5) !important;
+}
+
+/* Estilos para campos de contraseña */
+.modal-dynamic-form .relative button {
+  /* Botón de mostrar/ocultar contraseña */
+  color: rgba(255, 255, 255, 0.5) !important;
+  transition: color 0.2s !important;
+}
+
+.modal-dynamic-form .relative button:hover {
+  color: white !important;
+}
+
+/* Estilos para errores */
+.modal-dynamic-form .text-xs.text-red-500 {
+  /* Mensajes de error */
+  color: #ef4444 !important;
+  font-size: 0.75rem !important;
+  margin-top: 0.25rem !important;
+}
+
+/* Estilos para campos con error */
+.modal-dynamic-form input.border-red-500,
+.modal-dynamic-form select.border-red-500,
+.modal-dynamic-form textarea.border-red-500 {
+  border-color: #ef4444 !important;
+}
+
+/* Ajustes para el grid */
+.modal-dynamic-form .grid {
+  /* Grid layout para modales */
+  display: grid !important;
+  grid-template-columns: 1fr !important;
+  gap: 1rem !important;
+}
+
+.modal-dynamic-form .md\:grid-cols-2 {
+  /* Grid de 2 columnas en desktop */
+  grid-template-columns: repeat(2, 1fr) !important;
+}
+
+.modal-dynamic-form .md\:col-span-2 {
+  /* Campos que ocupan 2 columnas */
+  grid-column: span 2 / span 2 !important;
+}
+
+/* Estilos para el formulario completo */
+.modal-dynamic-form form {
+  /* Contenedor del formulario */
+  padding: 0 !important;
+  margin: 0 !important;
+}
+
+/* Ajustes para el espaciado */
+.modal-dynamic-form .space-y-6 > * + * {
+  margin-top: 1.5rem !important;
+} 
