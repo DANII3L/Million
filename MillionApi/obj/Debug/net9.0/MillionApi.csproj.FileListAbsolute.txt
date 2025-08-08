@@ -50,3 +50,4 @@ C:\Users\bedom\OneDrive\Documentos\Daniel M\Proyectos\Million\MillionApi\obj\Deb
 C:\Users\bedom\OneDrive\Documentos\Daniel M\Proyectos\Million\MillionApi\obj\Debug\net9.0\MillionApi.pdb
 C:\Users\bedom\OneDrive\Documentos\Daniel M\Proyectos\Million\MillionApi\obj\Debug\net9.0\MillionApi.genruntimeconfig.cache
 C:\Users\bedom\OneDrive\Documentos\Daniel M\Proyectos\Million\MillionApi\obj\Debug\net9.0\ref\MillionApi.dll
+C:\Users\bedom\OneDrive\Documentos\Daniel M\Proyectos\Million\MillionApi\obj\Debug\net9.0\MillionApi.sourcelink.json
